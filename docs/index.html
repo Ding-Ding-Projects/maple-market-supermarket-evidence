@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy-reviewed construction evidence for Maple Market.">
+  <title>Maple Market | Evidence gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Maple Market evidence home">Maple Market</a>
+    <nav aria-label="Primary navigation">
+      <a href="#gallery">Gallery</a>
+      <a href="#status">Status</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="md-button tonal" id="palette-button" type="button" aria-haspopup="dialog" aria-controls="palette">Command palette <kbd>Ctrl+Shift+F</kbd></button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Public construction record</p>
+        <h1 id="hero-title">A market taking shape.</h1>
+        <p class="hero-lede">A small, privacy-reviewed gallery of the current Maple Market build. These images document visible construction work, not a published experience or a complete runtime acceptance.</p>
+        <div class="hero-actions">
+          <a class="md-button filled" href="#gallery">Browse evidence</a>
+          <a class="md-button outlined" href="#status">Read the status</a>
+        </div>
+      </div>
+      <aside class="status-card" aria-label="Current evidence status">
+        <span class="status-icon" aria-hidden="true">◉</span>
+        <div>
+          <p class="card-label">Current state</p>
+          <strong>Construction evidence</strong>
+          <p class="muted">Runtime and publication remain unverified.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="gallery" class="content-section" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Four selected captures</p>
+          <h2 id="gallery-title">Evidence gallery</h2>
+        </div>
+        <button class="md-button text-button" id="filter-toggle" type="button" aria-expanded="true" aria-controls="filters">Filters <span aria-hidden="true">⌄</span></button>
+      </div>
+      <div id="filters" class="filter-bar" role="search">
+        <label class="search-field">
+          <span aria-hidden="true">⌕</span>
+          <span class="sr-only">Search evidence</span>
+          <input id="search" type="search" placeholder="Search evidence" autocomplete="off">
+        </label>
+        <div class="filter-chips" role="group" aria-label="Evidence category">
+          <button class="chip active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-filter="circulation" aria-pressed="false">Circulation</button>
+          <button class="chip" type="button" data-filter="retail" aria-pressed="false">Retail</button>
+        </div>
+      </div>
+      <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
+      <p id="empty-state" class="empty-state" hidden>No evidence matches that search.</p>
+    </section>
+
+    <section id="status" class="content-section status-section" aria-labelledby="status-title">
+      <div class="section-heading"><div><p class="eyebrow">Read before sharing</p><h2 id="status-title">What these captures prove</h2></div></div>
+      <div class="status-grid">
+        <article class="info-card"><span class="card-number">01</span><h3>Visible construction</h3><p>The selected images show modeled retail and circulation elements from the current construction pass.</p></article>
+        <article class="info-card"><span class="card-number">02</span><h3>Not runtime acceptance</h3><p>These still captures do not prove transactions, two-client behavior, performance, or a completed playable release.</p></article>
+        <article class="info-card"><span class="card-number">03</span><h3>Privacy boundary</h3><p>This public gallery omits sensitive interior views, account information, source code, and operational receipts.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="content-section about-section" aria-labelledby="about-title">
+      <div><p class="eyebrow">Provenance</p><h2 id="about-title">Small gallery, clear record.</h2></div>
+      <div class="about-copy"><p>Every image is copied from a staged publication candidate and listed with its SHA-256, source revision, capture context, and verification state. The public site contains no external scripts, fonts, analytics, or hidden downloads.</p><p class="provenance-line"><strong>Version:</strong> 0.3.1-preview<br><strong>Updated:</strong> 2026-09-11 16:56:22 EDT<br><strong>Source revision:</strong> <code>3a4eef0af99f4f820622e1e73797f242b423c1c6</code></p></div>
+    </section>
+  </main>
+
+  <footer><span>Maple Market evidence</span><span>Version 0.3.1-preview · Updated 2026-09-11 16:56:22 EDT</span></footer>
+
+  <dialog id="palette" aria-labelledby="palette-title">
+    <div class="palette-head"><h2 id="palette-title">Command palette</h2><button class="icon-button" id="palette-close" type="button" aria-label="Close command palette">×</button></div>
+    <label class="search-field palette-search"><span aria-hidden="true">⌕</span><span class="sr-only">Find a command</span><input id="palette-search" type="search" placeholder="Find a section or action"></label>
+    <div id="palette-results" class="palette-results" role="listbox" aria-label="Commands"></div>
+    <p class="palette-hint"><kbd>↑</kbd><kbd>↓</kbd> to move <kbd>Enter</kbd> to select <kbd>Esc</kbd> to close</p>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>

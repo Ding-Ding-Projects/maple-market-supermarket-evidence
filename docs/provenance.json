@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "version": "0.3.1-preview",
+  "updatedAt": "2026-09-11T16:56:22-04:00",
+  "sourceRevision": "3a4eef0af99f4f820622e1e73797f242b423c1c6",
+  "verificationState": "construction-evidence-only",
+  "privacyReview": "sensitive-interior-views-and-references-excluded; account-data-excluded; source-code-excluded; operational-receipts-excluded",
+  "captures": [
+    {"file":"images/glass-route-overview.jpg","sha256":"A702C6A6D08D53E6EAC10CFB00AF042A928297F95838157604508E14D862B684","bytes":194762},
+    {"file":"images/glass-vestibule-before-hinged-retirement.jpg","sha256":"C84E2CC6E96F9F7D3F0908127095005D8B960C13011BCEC3119DE92AECBE48DA","bytes":213693},
+    {"file":"images/modeled-checkout-A.jpg","sha256":"50A314D2CA590AB882FF7A07DE794B06949345895D4C4FBD40CA3B1D0E146005","bytes":228903},
+    {"file":"images/modeled-screen-clear.jpg","sha256":"E1510172BFBBA55DF1EF40C123AFF8D9CFD1FAF2F98EE353C7C04CBD56F4D0D3","bytes":228069}
+  ]
+}

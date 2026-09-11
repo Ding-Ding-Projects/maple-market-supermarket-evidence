@@ -1,0 +1,36 @@
+name: Deploy public evidence Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate public bundle
+        shell: bash
+        run: |
+          test -f docs/index.html
+          test -f docs/styles.css
+          test -f docs/app.js
+          test -f docs/provenance.json
+          test "$(find docs/images -type f | wc -l)" -eq 4
+          ! rg -n -i 'restroom|room|caller|credential|password|token|private operational|protected source|diagnostic' docs/index.html docs/app.js docs/README.md docs/provenance.json
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
