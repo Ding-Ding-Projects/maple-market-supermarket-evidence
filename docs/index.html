@@ -42,7 +42,7 @@
     <section id="gallery" class="content-section" aria-labelledby="gallery-title">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Four selected captures</p>
+          <p class="eyebrow">Receipt-backed public captures</p>
           <h2 id="gallery-title">Evidence gallery</h2>
         </div>
         <button class="md-button text-button" id="filter-toggle" type="button" aria-expanded="true" aria-controls="filters">Filters <span aria-hidden="true">⌄</span></button>
@@ -55,8 +55,8 @@
         </label>
         <div class="filter-chips" role="group" aria-label="Evidence category">
           <button class="chip active" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="chip" type="button" data-filter="circulation" aria-pressed="false">Circulation</button>
-          <button class="chip" type="button" data-filter="retail" aria-pressed="false">Retail</button>
+          <button class="chip" type="button" data-filter="construction" aria-pressed="false">Construction</button>
+          <button class="chip" type="button" data-filter="authored-model" aria-pressed="false">Authored model</button>
         </div>
       </div>
       <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
@@ -67,14 +67,14 @@
       <div class="section-heading"><div><p class="eyebrow">Read before sharing</p><h2 id="status-title">What these captures prove</h2></div></div>
       <div class="status-grid">
         <article class="info-card"><span class="card-number">01</span><h3>Visible construction</h3><p>The selected images show modeled retail and circulation elements from the current construction pass.</p></article>
-        <article class="info-card"><span class="card-number">02</span><h3>Not runtime acceptance</h3><p>These still captures do not prove transactions, two-client behavior, performance, or a completed playable release.</p></article>
+        <article class="info-card"><span class="card-number">02</span><h3>Not runtime acceptance</h3><p>These still captures do not prove purchases, two-client behavior, performance, or a completed playable release.</p></article>
         <article class="info-card"><span class="card-number">03</span><h3>Privacy boundary</h3><p>This public gallery omits sensitive interior views, account information, source code, and operational receipts.</p></article>
       </div>
     </section>
 
     <section id="about" class="content-section about-section" aria-labelledby="about-title">
       <div><p class="eyebrow">Provenance</p><h2 id="about-title">Small gallery, clear record.</h2></div>
-      <div class="about-copy"><p>Every image is copied from a staged publication candidate and listed with its SHA-256, source revision, capture context, and verification state. The public site contains no external scripts, fonts, analytics, or hidden downloads.</p><p class="provenance-line"><strong>Version:</strong> 0.3.1-preview<br><strong>Updated:</strong> 2026-09-11 16:56:22 EDT<br><strong>Source revision:</strong> <code>3a4eef0af99f4f820622e1e73797f242b423c1c6</code></p></div>
+        <div class="about-copy"><p>Every image is copied from the actual Maple Market Oak Kay and listed with its SHA-256, source revision, capture context, and verification state. The public site contains no external scripts, fonts, analytics, or hidden downloads.</p><p class="provenance-line"><strong>Version:</strong> <span id="version">Loading</span><br><strong>Updated:</strong> <span id="updated">Loading</span><br><strong>Source revision:</strong> <code id="source-revision">Loading</code></p></div>
     </section>
   </main>
 

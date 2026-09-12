@@ -1,2 +1,17 @@
-<!DOCTYPE html><html><head><title>Status</title></head><body><h1>Status Page</h1><p>Last updated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss zzz")</p><p>See <a href="index.html">main site</a></p></body></html>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Maple Market evidence status</title></head>
+<body>
+  <main>
+    <h1>Maple Market evidence status</h1>
+    <p id="state">Loading the current public evidence manifest.</p>
+    <p>See the <a href="index.html">complete evidence gallery</a>.</p>
+  </main>
+  <script>
+    fetch('provenance.json').then(response => response.json()).then(data => {
+      document.querySelector('#state').textContent = `${data.captures.length} public-safe captures, updated ${new Date(data.updatedAt).toLocaleString()}.`;
+    }).catch(() => { document.querySelector('#state').textContent = 'The evidence manifest is unavailable.'; });
+  </script>
+</body>
+</html>
 <p><img src="images/new-huishot.jpg" alt="new huishot" style="width:200px;height:auto;margin:5px;" /></p>

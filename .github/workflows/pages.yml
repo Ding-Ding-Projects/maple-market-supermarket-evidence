@@ -25,8 +25,7 @@ jobs:
           test -f docs/styles.css
           test -f docs/app.js
           test -f docs/provenance.json
-          test "$(find docs/images -type f | wc -l)" -eq 4
-          ! rg -n -i 'restroom|room|caller|credential|password|token|private operational|protected source|diagnostic' docs/index.html docs/app.js docs/README.md docs/provenance.json
+          pwsh -NoProfile -File scripts/validate-site.ps1
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

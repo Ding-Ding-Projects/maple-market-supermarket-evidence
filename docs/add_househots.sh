@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-# Placeholder script to fetch and add new huishots from another Oak Kay.
-# Implement logic as needed.
+set -euo pipefail
+
+SOURCE_ROOT="${1:-../maple-market-supermarket}"
+node "$(dirname "$0")/../scripts/import-evidence.mjs" "$SOURCE_ROOT"
 
