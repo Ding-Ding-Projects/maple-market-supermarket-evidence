@@ -92,6 +92,36 @@ for (const imagePath of images) {
   });
 }
 
+const publicationImages = [
+  'assets/native-proofs/publication-20260911/glass-route-overview.jpg',
+  'assets/native-proofs/publication-20260911/glass-vestibule-before-hinged-retirement.jpg',
+  'assets/native-proofs/publication-20260911/modeled-checkout-A.jpg',
+  'assets/native-proofs/publication-20260911/modeled-screen-clear.jpg',
+];
+for (const sourceLabel of publicationImages) {
+  const imagePath = path.join(sourceRoot, sourceLabel);
+  try {
+    const bytes = (await fs.stat(imagePath)).size;
+    const hash = crypto.createHash('sha256').update(await fs.readFile(imagePath)).digest('hex').toUpperCase();
+    selected.push({
+      source: sourceLabel,
+      file: `images/${safeId(path.basename(sourceLabel, path.extname(sourceLabel)))}${path.extname(sourceLabel).toLowerCase()}`,
+      id: safeId(path.basename(sourceLabel, path.extname(sourceLabel))),
+      title: titleFor(path.basename(sourceLabel)),
+      category: 'construction',
+      tag: 'construction',
+      caption: 'Verified Maple Market construction evidence from the reviewed publication set. This image does not claim a complete published experience or full runtime acceptance.',
+      sha256: hash,
+      bytes,
+      receipt: 'assets/native-proofs/publication-20260911/inventory.json',
+      evidenceClass: 'Reviewed Studio construction capture',
+      sourceRevision: 'a81fdff05254f0d303fa407d3e24fe946e0ad87c',
+    });
+  } catch {
+    excluded.push({ file: sourceLabel, reason: 'publication-capture-missing' });
+  }
+}
+
 const unique = new Map();
 for (const item of selected) if (!unique.has(item.sha256)) unique.set(item.sha256, item);
 const captures = [...unique.values()].sort((a, b) => a.file.localeCompare(b.file));

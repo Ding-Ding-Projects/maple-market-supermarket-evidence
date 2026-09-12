@@ -1,12 +1,40 @@
 {
   "schemaVersion": 2,
   "version": "0.4.0-preview",
-  "updatedAt": "2026-09-12T07:26:08.449Z",
+  "updatedAt": "2026-09-12T07:28:43.321Z",
   "sourceRepository": "Ding-Ding-Projects/maple-market-supermarket",
   "sourceRevision": "a81fdff05254f0d303fa407d3e24fe946e0ad87c",
   "verificationState": "public-safe-construction-evidence-only",
   "privacyReview": "Only receipt-backed images that pass the public safety review are included.",
   "captures": [
+    {
+      "source": "assets/native-proofs/publication-20260911/glass-route-overview.jpg",
+      "file": "images/glass-route-overview.jpg",
+      "id": "glass-route-overview",
+      "title": "Glass Route Overview",
+      "category": "construction",
+      "tag": "construction",
+      "caption": "Verified Maple Market construction evidence from the reviewed publication set. This image does not claim a complete published experience or full runtime acceptance.",
+      "sha256": "A702C6A6D08D53E6EAC10CFB00AF042A928297F95838157604508E14D862B684",
+      "bytes": 194762,
+      "receipt": "assets/native-proofs/publication-20260911/inventory.json",
+      "evidenceClass": "Reviewed Studio construction capture",
+      "sourceRevision": "a81fdff05254f0d303fa407d3e24fe946e0ad87c"
+    },
+    {
+      "source": "assets/native-proofs/publication-20260911/glass-vestibule-before-hinged-retirement.jpg",
+      "file": "images/glass-vestibule-before-hinged-retirement.jpg",
+      "id": "glass-vestibule-before-hinged-retirement",
+      "title": "Glass Vestibule Before Hinged Retirement",
+      "category": "construction",
+      "tag": "construction",
+      "caption": "Verified Maple Market construction evidence from the reviewed publication set. This image does not claim a complete published experience or full runtime acceptance.",
+      "sha256": "C84E2CC6E96F9F7D3F0908127095005D8B960C13011BCEC3119DE92AECBE48DA",
+      "bytes": 213693,
+      "receipt": "assets/native-proofs/publication-20260911/inventory.json",
+      "evidenceClass": "Reviewed Studio construction capture",
+      "sourceRevision": "a81fdff05254f0d303fa407d3e24fe946e0ad87c"
+    },
     {
       "source": "docs/screenshots/materials/market/market-brick-after.png",
       "file": "images/materials-market-market-brick-after.png",
@@ -76,6 +104,34 @@
       "receipt": "docs/screenshots/materials/retail/retail-checkout-material-before.json",
       "evidenceClass": "Blender creation evidence, not Studio Play evidence",
       "sourceRevision": "working source, exact commit not recorded in receipt"
+    },
+    {
+      "source": "assets/native-proofs/publication-20260911/modeled-checkout-A.jpg",
+      "file": "images/modeled-checkout-a.jpg",
+      "id": "modeled-checkout-a",
+      "title": "Modeled Checkout A",
+      "category": "construction",
+      "tag": "construction",
+      "caption": "Verified Maple Market construction evidence from the reviewed publication set. This image does not claim a complete published experience or full runtime acceptance.",
+      "sha256": "50A314D2CA590AB882FF7A07DE794B06949345895D4C4FBD40CA3B1D0E146005",
+      "bytes": 228903,
+      "receipt": "assets/native-proofs/publication-20260911/inventory.json",
+      "evidenceClass": "Reviewed Studio construction capture",
+      "sourceRevision": "a81fdff05254f0d303fa407d3e24fe946e0ad87c"
+    },
+    {
+      "source": "assets/native-proofs/publication-20260911/modeled-screen-clear.jpg",
+      "file": "images/modeled-screen-clear.jpg",
+      "id": "modeled-screen-clear",
+      "title": "Modeled Screen Clear",
+      "category": "construction",
+      "tag": "construction",
+      "caption": "Verified Maple Market construction evidence from the reviewed publication set. This image does not claim a complete published experience or full runtime acceptance.",
+      "sha256": "E1510172BFBBA55DF1EF40C123AFF8D9CFD1FAF2F98EE353C7C04CBD56F4D0D3",
+      "bytes": 228069,
+      "receipt": "assets/native-proofs/publication-20260911/inventory.json",
+      "evidenceClass": "Reviewed Studio construction capture",
+      "sourceRevision": "a81fdff05254f0d303fa407d3e24fe946e0ad87c"
     },
     {
       "source": "docs/screenshots/models/arcade/batch2/final/arcade-coin-flip.png",
