@@ -11,6 +11,7 @@
   <header class="topbar">
     <a class="brand" href="#top" aria-label="Maple Market evidence home">Maple Market</a>
     <nav aria-label="Primary navigation">
+      <a href="#overview">Overview</a>
       <a href="#gallery">Gallery</a>
       <a href="#status">Status</a>
       <a href="#about">About</a>
@@ -37,6 +38,47 @@
           <p class="muted">Runtime and publication remain unverified.</p>
         </div>
       </aside>
+    </section>
+
+    <section id="overview" class="content-section game-overview" aria-labelledby="overview-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Public project description</p>
+          <h2 id="overview-title">Maple Market in progress.</h2>
+        </div>
+      </div>
+      <div class="game-overview-grid">
+        <div class="game-copy">
+          <p>Maple Market is an in-progress Roblox supermarket and resort architecture project.</p>
+          <p>Explore the planned vision of a three-floor supermarket with connected circulation, retail departments, an upper-floor cafe, and an adjacent resort designed around suite and bedroom spaces.</p>
+          <p>The current milestone shows installed structural resort architecture, including timber framing, floors, partitions, stairs, lift openings, sixteen suite spaces, and thirty-two bedroom spaces. Furnishings, equipment, booking features, complete facility operations, and final visual acceptance are still in progress.</p>
+          <p>This is a construction milestone, not a finished experience. Roblox publication, runtime acceptance, and hosted public publication have not yet been completed.</p>
+          <p lang="zh-Hant">Maple Market 仍然係一個建造及驗證中嘅 Roblox 超級市場同度假村建築項目。體驗呢個三層超級市場嘅規劃方向，包括互相連接嘅通道、零售部門、頂層咖啡廳，以及旁邊以套房同睡房空間為核心設計嘅度假村。目前嘅里程碑展示咗已安裝嘅度假村結構建築，包括木結構、樓層、隔間、樓梯、升降機開口、十六個套房空間同三十二個睡房空間。傢俬、設備、預約功能、完整設施運作同最終視覺驗收仍然進行中。呢個係建造里程碑，唔係已完成嘅體驗。Roblox 發布、實際運行驗收同公開託管發布目前都未完成。</p>
+          <label class="copy-label" for="game-description-copy">Bilingual game description / 雙語遊戲介紹</label>
+          <textarea class="copy-source" id="game-description-copy" rows="16" readonly aria-describedby="game-description-copy-status">Maple Market is an in-progress Roblox supermarket and resort architecture project.
+
+Explore the planned vision of a three-floor supermarket with connected circulation, retail departments, an upper-floor cafe, and an adjacent resort designed around suite and bedroom spaces.
+
+The current milestone shows installed structural resort architecture, including timber framing, floors, partitions, stairs, lift openings, sixteen suite spaces, and thirty-two bedroom spaces. Furnishings, equipment, booking features, complete facility operations, and final visual acceptance are still in progress.
+
+This is a construction milestone, not a finished experience. Roblox publication, runtime acceptance, and hosted public publication have not yet been completed.
+
+Maple Market 仍然係一個建造及驗證中嘅 Roblox 超級市場同度假村建築項目。
+
+體驗呢個三層超級市場嘅規劃方向，包括互相連接嘅通道、零售部門、頂層咖啡廳，以及旁邊以套房同睡房空間為核心設計嘅度假村。
+
+目前嘅里程碑展示咗已安裝嘅度假村結構建築，包括木結構、樓層、隔間、樓梯、升降機開口、十六個套房空間同三十二個睡房空間。傢俬、設備、預約功能、完整設施運作同最終視覺驗收仍然進行中。
+
+呢個係建造里程碑，唔係已完成嘅體驗。Roblox 發布、實際運行驗收同公開託管發布目前都未完成。</textarea>
+          <button class="md-button filled" id="copy-game-description" type="button" aria-describedby="game-description-copy-status">Copy description / 複製遊戲介紹</button>
+          <p class="copy-status" id="game-description-copy-status" role="status" aria-live="polite">Ready to copy / 可以複製。</p>
+          <noscript>Select the description above and copy it manually. / 請選取上面的介紹再手動複製。</noscript>
+        </div>
+        <figure class="thumbnail-card">
+          <img src="images/maple-market-thumbnail-20260913.png" alt="Maple Market promotional concept art showing a three-floor supermarket exterior">
+          <figcaption>Promotional concept artwork, not a Studio capture or runtime proof.</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section id="gallery" class="content-section" aria-labelledby="gallery-title">
@@ -78,7 +120,7 @@
     </section>
   </main>
 
-  <footer><span>Maple Market evidence</span><span>Version 0.3.1-preview · Updated 2026-09-11 16:56:22 EDT</span></footer>
+  <footer><span>Maple Market evidence</span><span>Version <span id="footer-version">0.5.0-preview</span> · Updated <span id="footer-updated">2026-09-13 00:58:06 EDT</span></span></footer>
 
   <dialog id="palette" aria-labelledby="palette-title">
     <div class="palette-head"><h2 id="palette-title">Command palette</h2><button class="icon-button" id="palette-close" type="button" aria-label="Close command palette">×</button></div>
@@ -87,5 +129,6 @@
     <p class="palette-hint"><kbd>↑</kbd><kbd>↓</kbd> to move <kbd>Enter</kbd> to select <kbd>Esc</kbd> to close</p>
   </dialog>
   <script src="app.js"></script>
+  <script src="copy-description.js"></script>
 </body>
 </html>

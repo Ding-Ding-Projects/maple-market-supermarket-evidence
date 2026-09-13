@@ -1,11 +1,21 @@
 {
   "schemaVersion": 2,
-  "version": "0.4.0-preview",
-  "updatedAt": "2026-09-12T07:28:43.321Z",
+  "version": "0.5.0-preview",
+  "updatedAt": "2026-09-13T04:58:06Z",
   "sourceRepository": "Ding-Ding-Projects/maple-market-supermarket",
-  "sourceRevision": "a81fdff05254f0d303fa407d3e24fe946e0ad87c",
+  "sourceRevision": "daed3508ced4cb96f8eba4cd83f948afa953f697",
   "verificationState": "public-safe-construction-evidence-only",
-  "privacyReview": "Only receipt-backed images that pass the public safety review are included.",
+  "privacyReview": "Only reviewed images that pass the public safety review are included.",
+  "thumbnail": {
+    "file": "images/maple-market-thumbnail-20260913.png",
+    "sha256": "484D1BD9A2BA9D6936E105087B99876C36C9408024C3755D8806F6EA6F220DF4",
+    "bytes": 2626613,
+    "width": 1254,
+    "height": 1254,
+    "kind": "Promotional concept artwork, not construction evidence",
+    "sourceRevision": "daed3508ced4cb96f8eba4cd83f948afa953f697",
+    "captureDateTime": "not applicable: generated artwork"
+  },
   "captures": [
     {
       "source": "assets/native-proofs/publication-20260911/glass-route-overview.jpg",
@@ -1406,6 +1416,36 @@
       "receipt": "docs/screenshots/models/retail-sign-fixtures-front/retail-electronic-label-v1.json",
       "evidenceClass": "Blender creation evidence, not Studio Play evidence",
       "sourceRevision": "working source, exact commit not recorded in receipt"
+    },
+    {
+      "source": "reviewed public overview media",
+      "file": "images/spa-architecture-after-20260913.jpg",
+      "id": "spa-architecture-after-20260913",
+      "title": "Spa Architecture Exterior",
+      "category": "construction",
+      "tag": "construction",
+      "caption": "Reviewed Roblox Studio Edit-mode capture of the unfinished resort architecture stage. This image does not claim a finished experience, runtime acceptance, or publication.",
+      "sha256": "FEDAA824002719B478B16CCBA06B4D90ACECC0029DE3FED81E773CF843F7F620",
+      "bytes": 132752,
+      "receipt": "Public overview capture manifest",
+      "evidenceClass": "Reviewed Studio Edit construction capture",
+      "sourceRevision": "daed3508ced4cb96f8eba4cd83f948afa953f697",
+      "captureDateTime": "unavailable: retained provenance has no trustworthy capture timestamp"
+    },
+    {
+      "source": "reviewed public overview media",
+      "file": "images/spa-timber-hall-20260913.jpg",
+      "id": "spa-timber-hall-20260913",
+      "title": "Spa Timber Hall",
+      "category": "construction",
+      "tag": "construction",
+      "caption": "Reviewed Roblox Studio Edit-mode capture of the unfinished timber hall. This image does not claim furnishings, runtime acceptance, or publication.",
+      "sha256": "8F644CAFCC4343F5464F5688E0166F67A45E7887404FEEF76159FAB1383663A6",
+      "bytes": 154278,
+      "receipt": "Public overview capture manifest",
+      "evidenceClass": "Reviewed Studio Edit construction capture",
+      "sourceRevision": "daed3508ced4cb96f8eba4cd83f948afa953f697",
+      "captureDateTime": "unavailable: retained provenance has no trustworthy capture timestamp"
     }
   ],
   "excludedCount": 244
